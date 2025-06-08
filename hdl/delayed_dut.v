@@ -187,6 +187,10 @@ module dut(CLK,
     begin
       counter <= `BSV_ASSIGNMENT_DELAY 8'd0;
     end
+  else if (counter==8'd50)
+  	begin
+	  counter <= 8'd0;
+	end
   else
     begin
       if (counter$EN) counter <= `BSV_ASSIGNMENT_DELAY counter$D_IN;
@@ -201,5 +205,11 @@ module dut(CLK,
   end
   `endif // BSV_NO_INITIAL_BLOCKS
   // synopsys translate_on
+
+  initial begin
+  	$dumpfile("sim_build/dut.vcd");
+	$dumpvars;
+  end
+
 endmodule  // dut
 
