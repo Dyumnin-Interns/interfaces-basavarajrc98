@@ -23,6 +23,9 @@ async def dut_test(dut):
         await write_to_dut(dut, 5, b[i])
         await RisingEdge(dut.CLK)
 
+        for _ in range(55):
+            await RisingEdge(dut.CLK)
+
         y = await read_from_dut(dut, 3)
         assert y == expected[i], f"Mismatch: got {y}, expected {expected[i]}"
 
