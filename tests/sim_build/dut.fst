@@ -1,0 +1,345 @@
+$date
+	Sun Jun  8 16:27:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module dut $end
+$var wire 1 ! CLK $end
+$var wire 1 " RST_N $end
+$var wire 1 # \a_data$whas $end
+$var wire 1 $ \a_ff$CLR $end
+$var wire 1 % \a_ff$DEQ $end
+$var wire 1 & \a_ff$D_IN $end
+$var wire 1 ' \a_ff$ENQ $end
+$var wire 1 ( \b_data$whas $end
+$var wire 1 ) \b_ff$CLR $end
+$var wire 1 * \b_ff$DEQ $end
+$var wire 1 + \b_ff$D_IN $end
+$var wire 1 , \b_ff$ENQ $end
+$var wire 1 - \pwyff_deq$whas $end
+$var wire 3 . read_address [2:0] $end
+$var wire 1 / read_en $end
+$var wire 1 0 read_rdy $end
+$var wire 3 1 write_address [2:0] $end
+$var wire 1 2 write_data $end
+$var wire 1 3 write_en $end
+$var wire 1 4 write_rdy $end
+$var wire 1 5 \y_ff$CLR $end
+$var wire 1 6 \y_ff$DEQ $end
+$var wire 1 7 \y_ff$D_IN $end
+$var wire 1 8 \y_ff$ENQ $end
+$var wire 1 9 \y_ff$FULL_N $end
+$var wire 1 : \y_ff$EMPTY_N $end
+$var wire 1 ; \y_ff$D_OUT $end
+$var wire 1 < \b_ff$FULL_N $end
+$var wire 1 = \b_ff$EMPTY_N $end
+$var wire 1 > \b_ff$D_OUT $end
+$var wire 1 ? \a_ff$FULL_N $end
+$var wire 1 @ \a_ff$EMPTY_N $end
+$var wire 1 A \a_ff$D_OUT $end
+$var reg 1 B read_data $end
+$scope module a_ff $end
+$var wire 1 ! CLK $end
+$var wire 1 $ CLR $end
+$var wire 1 % DEQ $end
+$var wire 1 & D_IN $end
+$var wire 1 @ EMPTY_N $end
+$var wire 1 ' ENQ $end
+$var wire 1 ? FULL_N $end
+$var wire 1 " RST $end
+$var wire 1 C d0d1 $end
+$var wire 1 D d0di $end
+$var wire 1 E d0h $end
+$var wire 1 F d1di $end
+$var wire 1 A D_OUT $end
+$var parameter 1 G guarded $end
+$var parameter 32 H width $end
+$var reg 1 A data0_reg $end
+$var reg 1 I data1_reg $end
+$var reg 1 J empty_reg $end
+$var reg 1 K full_reg $end
+$scope begin error_checks $end
+$var reg 1 L deqerror $end
+$var reg 1 M enqerror $end
+$upscope $end
+$upscope $end
+$scope module b_ff $end
+$var wire 1 ! CLK $end
+$var wire 1 ) CLR $end
+$var wire 1 * DEQ $end
+$var wire 1 + D_IN $end
+$var wire 1 = EMPTY_N $end
+$var wire 1 , ENQ $end
+$var wire 1 " RST $end
+$var wire 1 < FULL_N $end
+$var parameter 1 N guarded $end
+$var parameter 32 O width $end
+$var reg 1 > D_OUT $end
+$var reg 1 P empty_reg $end
+$scope begin error_checks $end
+$var reg 1 Q deqerror $end
+$var reg 1 R enqerror $end
+$upscope $end
+$upscope $end
+$scope module y_ff $end
+$var wire 1 ! CLK $end
+$var wire 1 5 CLR $end
+$var wire 1 6 DEQ $end
+$var wire 1 7 D_IN $end
+$var wire 1 ; D_OUT $end
+$var wire 1 : EMPTY_N $end
+$var wire 1 8 ENQ $end
+$var wire 1 9 FULL_N $end
+$var wire 1 " RST $end
+$var wire 1 S d0d1 $end
+$var wire 1 T d0di $end
+$var wire 1 U d0h $end
+$var wire 1 V d1di $end
+$var parameter 1 W guarded $end
+$var parameter 32 X width $end
+$var reg 1 Y data0_reg $end
+$var reg 1 Z data1_reg $end
+$var reg 1 [ empty_reg $end
+$var reg 1 \ full_reg $end
+$scope begin error_checks $end
+$var reg 1 ] deqerror $end
+$var reg 1 ^ enqerror $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 X
+1W
+b1 O
+1N
+b1 H
+1G
+$end
+#0
+$dumpvars
+0^
+0]
+1\
+0[
+0Z
+0Y
+0V
+1U
+0T
+0S
+0R
+0Q
+0P
+0M
+0L
+1K
+0J
+0I
+0F
+0E
+1D
+0C
+0B
+xA
+0@
+1?
+0>
+0=
+1<
+0;
+0:
+19
+08
+x7
+06
+05
+14
+13
+02
+b100 1
+10
+z/
+bz .
+x-
+0,
+0+
+0*
+0)
+0(
+1'
+0&
+0%
+0$
+1#
+1"
+1!
+$end
+#5000
+0!
+#10000
+0'
+0#
+03
+1E
+0D
+07
+0F
+0A
+1@
+1J
+1!
+#15000
+0!
+#20000
+1,
+1(
+13
+b101 1
+1!
+#25000
+0!
+#30000
+0(
+03
+0U
+1T
+0,
+18
+1*
+1%
+0<
+1=
+1P
+1!
+#35000
+0!
+#40000
+1U
+0T
+08
+0*
+0%
+0V
+x6
+0@
+0J
+1<
+0=
+0P
+1:
+1[
+1!
+#45000
+0!
+#50000
+16
+1-
+1/
+b11 .
+1!
+#55000
+0!
+#60000
+0-
+0/
+06
+0:
+0[
+1!
+#65000
+0!
+#70000
+0E
+1D
+1'
+1#
+13
+b100 1
+1!
+#75000
+0!
+#80000
+0'
+0#
+03
+1E
+0D
+0F
+1@
+1J
+1!
+#85000
+0!
+#90000
+1,
+1(
+13
+1&
+1+
+12
+b101 1
+1!
+#95000
+0!
+#100000
+0(
+03
+0U
+1T
+0,
+18
+1*
+1%
+17
+0<
+1=
+1P
+1>
+1!
+#105000
+0!
+#110000
+1U
+0T
+1B
+08
+0*
+0%
+1;
+1Y
+1:
+1[
+1<
+0=
+0P
+0@
+0J
+1!
+#115000
+0!
+#120000
+16
+1-
+1/
+1!
+#125000
+0!
+#130000
+0-
+0/
+0B
+06
+0:
+0[
+1!
+#135000
+0!
+#140000
+1!
+#140001

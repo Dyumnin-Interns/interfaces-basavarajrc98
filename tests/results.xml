@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1749395934" />
+    <testcase name="dut_test" classname="dut_test" file="/home/basavaraj/cocotb/interfaces-basavarajrc98/tests/dut_test.py" lineno="6" time="0.0045473575592041016" sim_time_ns="280.001" ratio_time="61574.441058249875" />
+  </testsuite>
+</testsuites>
